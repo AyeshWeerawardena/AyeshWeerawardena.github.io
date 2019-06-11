@@ -1,0 +1,184 @@
+body {
+	font-family:Arial,Helvetica,sans-serif;
+	font-weight:thin;
+	font-size: 25px;
+	cursor:crosshair;
+}
+
+
+a {
+	color:#000;
+	text-decoration: none;
+}
+
+img {
+	width:100%;
+	display: block;
+}
+
+
+/** {
+	outline: 1px solid lime;
+}
+*/
+.content a:hover {
+	color:white;
+}
+
+.contents {
+	color: black;
+	width: 50%;
+	height:100%;
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	margin-left: -50%;
+	transition: 0.5s;
+	cursor:crosshair;
+}
+
+.purchase-contents {
+	color: white;
+	width: 50%;
+	height:100%;
+	position: fixed;
+	bottom:0px;
+	left:0px;
+
+}
+
+.purchase-content a:hover {
+	color:lime;
+}
+
+.contents.left {
+	margin-left: 0%;
+	transition: 0.5s;
+}
+
+.title {
+	font-size: 24vw;
+	text-align: center;
+}
+
+.title-left {
+	text-align: right;
+}
+
+.nav-contents {
+	cursor:pointer;
+	color:white;
+	font-weight: bold;
+}
+
+.mudlark {
+	width: 50%;
+	height:100%;
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	margin-right: -50%;
+	transition: 0.5s;
+	text-align:right;
+}
+
+.mudlark.left {
+	margin-right: 0%;
+	transition: 0.5s;
+}
+
+.nav-mudlark {
+	cursor: pointer;
+	color:white;
+	font-weight: bold;
+}
+
+.close-contents {
+	cursor: pointer;
+}
+
+.close-mudlark {
+	cursor: pointer;
+}
+
+.twopage .col {
+	height:100vh;
+	overflow:scroll;
+	font-family: courier;
+	font-weight: thin;
+	font-size: 15px;
+	color: white;
+	padding:40px;
+	cursor:crosshair;
+}
+
+.trailer {
+	position:fixed;
+	align-items:center;
+	justify-content:center;
+	overflow:hidden;
+	min-width: 100%;
+	min-height: 100%;
+	width:auto;
+	height:auto;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	cursor:crosshair;
+}
+
+.icon {
+	top:0px;
+	right:0px;
+	position:fixed;
+	max-width:70px;
+	max-height:70px;
+}
+
+/*images*/
+.image-center {
+	position:center;
+}
+
+.image-center-small {
+	margin-left:18%;
+	max-width:500px;
+	max-height:500px;
+}
+
+.image-right {
+	margin-left: 60%;
+}
+
+.image-right-small {
+	margin-left: 60%;
+	max-width:100px;
+	max-height:100px;
+}
+
+.image-left-small {
+	left:0px;
+	max-width:100px;
+	max-height:100px;
+}
+/*end images*/
+
+/*text*/
+.text-center {
+	margin-left:25%;
+}
+
+.text-right {
+	margin-left:60%;
+}
+/*end text*/
+
+
+
+
+
+
+
+
+
+
