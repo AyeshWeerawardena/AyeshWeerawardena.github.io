@@ -1,184 +1,241 @@
 body {
-	font-family:Arial,Helvetica,sans-serif;
-	font-weight:thin;
-	font-size: 25px;
-	cursor:crosshair;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 32px;
 }
-
 
 a {
-	color:#000;
-	text-decoration: none;
+	color:black;
 }
-
-img {
-	width:100%;
-	display: block;
-}
-
 
 /** {
-	outline: 1px solid lime;
-}
-*/
-.content a:hover {
-	color:white;
-}
+  outline:1px solid black;
+}*/
 
-.contents {
-	color: black;
-	width: 50%;
-	height:100%;
-	position: fixed;
-	bottom:0px;
-	left:0px;
-	margin-left: -50%;
-	transition: 0.5s;
-	cursor:crosshair;
+/*START TOP NAV*/
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.purchase-contents {
-	color: white;
-	width: 50%;
-	height:100%;
-	position: fixed;
-	bottom:0px;
-	left:0px;
-
+/* Change the color  of links on hover */
+.topnav a:hover {
+  color: #778899;
 }
 
-.purchase-content a:hover {
-	color:lime;
+/* Add a color to the active/current link */
+.topnav a.alpha {
+  color: black;
+  font-size: 30px;
+  padding: 20px 16px;
 }
 
-.contents.left {
-	margin-left: 0%;
-	transition: 0.5s;
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  font-size: 15px;
+  padding: 20px 16px;
 }
 
-.title {
-	font-size: 24vw;
-	text-align: center;
+/*Graphic + Art*/
+.bio {
+  font-size: 15px;
+  position:fixed; 
+  top:55px;
+  left: 14px
 }
 
-.title-left {
-	text-align: right;
+/*END TOP NAV*/
+
+
+/*HOME NAV*/
+.homenav a {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  padding:10px 10px;
+  font-size: 15px
 }
 
-.nav-contents {
-	cursor:pointer;
-	color:white;
-	font-weight: bold;
+.homenav a:hover{
+  color: #778899;
+}
+/*HOME NAV END*/
+
+
+  /*start archive*/
+.examples .content {
+  border-radius: 80px;
+  text-align: center;
 }
 
-.mudlark {
-	width: 50%;
-	height:100%;
-	position: fixed;
-	bottom:0px;
-	right:0px;
-	margin-right: -50%;
-	transition: 0.5s;
-	text-align:right;
+
+.masthead {
+  background-image:url("https://images.metmuseum.org/CRDImages/ad/original/ap67.187.138.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:100vh;
+  width:100vw;
+  align-items:center;
+  justify-content: center;
 }
 
-.mudlark.left {
-	margin-right: 0%;
-	transition: 0.5s;
+.overlay {
+  height:80vh;
 }
 
-.nav-mudlark {
-	cursor: pointer;
-	color:white;
-	font-weight: bold;
-}
-
-.close-contents {
-	cursor: pointer;
-}
-
-.close-mudlark {
-	cursor: pointer;
+.overlay img {
+  height: 100%;
+  width:auto;
 }
 
 .twopage .col {
-	height:100vh;
-	overflow:scroll;
-	font-family: courier;
-	font-weight: thin;
-	font-size: 15px;
-	color: white;
-	padding:40px;
-	cursor:crosshair;
+  height:100vh;
+  overflow: scroll;
 }
 
-.trailer {
-	position:fixed;
-	align-items:center;
-	justify-content:center;
-	overflow:hidden;
-	min-width: 100%;
-	min-height: 100%;
-	width:auto;
-	height:auto;
-	top:0px;
-	left:0px;
-	z-index:-1;
-	cursor:crosshair;
+.fourcol .col {
+  height:50vh;
+  display: flex;
+    justify-content: center;
 }
 
-.icon {
-	top:0px;
-	right:0px;
-	position:fixed;
-	max-width:70px;
-	max-height:70px;
+.fourcol .content {
+  height: 100%;
+  align-items: center;
 }
 
-/*images*/
+.fourcol .col img {
+  height: 100%;
+  width: auto;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fours {
+  font-size:14px;
+}
+
+.offset-left {
+  margin-left: 25%;
+}
+
+.images img {
+  width: 100%;
+}
+
+.sources a{
+  display: block;
+}
+
+/*end archive*/
+
+.content-minor {
+  font-size: 15px;
+}
+
+
+/*start images*/
 .image-center {
-	position:center;
-}
-
-.image-center-small {
-	margin-left:18%;
-	max-width:500px;
-	max-height:500px;
-}
-
-.image-right {
-	margin-left: 60%;
-}
-
-.image-right-small {
-	margin-left: 60%;
-	max-width:100px;
-	max-height:100px;
-}
-
-.image-left-small {
-	left:0px;
-	max-width:100px;
-	max-height:100px;
+  margin-left:18%;
+  max-width:500px;
+  max-height:500px;
 }
 /*end images*/
 
-/*text*/
-.text-center {
-	margin-left:25%;
+
+
+/*start video background*/
+/*if all else fails, change back to . trailer on both css and index */
+
+.trailer {
+  position:fixed;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  min-width: 100%;
+  min-height: 100%;
+  width:auto;
+  height:auto;
+  top:0px;
+  left:0px;
+  z-index:-1;
 }
 
-.text-right {
-	margin-left:60%;
+  /*end video background */
+
+  .audio {
+    position:fixed;
+    align-items: baseline;
+    bottom: 0px;
+    right:0px;
+  }
+
+/*audio*/
+
+/*video start*/
+
+[data-video] {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
-/*end text*/
+[data-video] * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*video end*/
+
+/*contact image*/
+
+.row{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  .img{
+    flex: 0 1 300px
+  }
+}
+.justify-content-center{
+  justify-content:center;
+  
+}
+
+/*contact image*/
 
 
 
 
-
-
-
-
+  /*icon*/
+  
+  .icon {
+  top:0px;
+  right:0px;
+  position:fixed;
+  max-width:70px;
+  max-height:70px;
+}
 
 

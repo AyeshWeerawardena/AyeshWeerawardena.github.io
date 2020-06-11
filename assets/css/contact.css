@@ -1,0 +1,17 @@
+.contact {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	font-size: 20px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+	font-family: Arial,Helvetica,sans-serif;
+	text-align: center;
+	font-size: 15px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}

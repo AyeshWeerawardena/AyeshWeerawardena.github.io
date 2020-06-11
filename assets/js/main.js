@@ -1,33 +1,28 @@
-$( document ).ready(function() {
-// start here    
-$('.menu-link').click(function() {
-  $('.menu').addClass('left');
-});
+// POP UPS LIST
 
-$('.close-link').click(function() {
-  $('.menu').removeClass('left');
-});
+$('.r-car').mouseenter(function() {
+    $('.p-car').addClass('p-show');
+  });
 
+$('.r-car').mouseleave(function() {
+    $('.p-car').removeClass('p-show');
+  });
 
-// popup link
+ $('.r-bike').mouseenter(function() {
+    $('.p-bike').addClass('p-show');
+  });
 
-
-// popups
-
-// $('.l-1').click(function() {
-//   $('.p-1').addClass('active');
-// });
+$('.r-bike').mouseleave(function() {
+    $('.p-bike').removeClass('p-show');
+  });
 
 
 
+ $('.nav-contents').mouseenter(function() {
+    $('.contents').addClass('top');
+  });
 
 
-
-
-
-
-
-
-
-// end here
-});
+ $('.nav-contents').mouseleave(function() {
+    $('.contents').removeClass('top');
+  });
