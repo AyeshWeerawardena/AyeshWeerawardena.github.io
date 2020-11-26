@@ -1,15 +1,24 @@
 body {
-	font-family: Arial,Helvetica,sans-serif;
+	font-family: Helvetica;
+  font-weight: thin;
 	font-size: 32px;
 }
 
-a {
-	color:black;
+a { color: black; 
+text-decoration: none;
+
 }
 
-/** {
-  outline:1px solid black;
-}*/
+@font-face{
+  font-family:terminal_grotesque;
+  src:url(terminal-grotesque.ttf);
+}
+
+@font-face{
+  font-family:terminal_grotesque_open;
+  src:url(terminal-grotesque_open);
+}
+
 
 /*START TOP NAV*/
 
@@ -20,6 +29,7 @@ a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  word-wrap: normal;
 }
 
 /* Change the color  of links on hover */
@@ -40,6 +50,7 @@ a {
   float: right;
   font-size: 15px;
   padding: 20px 16px;
+  word-wrap: break-word;
 }
 
 /*Graphic + Art*/
@@ -68,174 +79,184 @@ a {
 /*HOME NAV END*/
 
 
-  /*start archive*/
-.examples .content {
-  border-radius: 80px;
-  text-align: center;
+
+.uni {
+	padding: 10px;
+  color: green;
+}
+
+.per {
+  padding: 10px;
+  color: orange;
+  border-top: 5px;
+}
+
+.table {
+	margin-top: 20px;
+  font-size: 22px;
 }
 
 
-.masthead {
-  background-image:url("https://images.metmuseum.org/CRDImages/ad/original/ap67.187.138.jpg");
-  background-size:cover;
-  background-repeat:no-repeat;
+.row {
+	display: flex;
+	flex-wrap:wrap;
+	border-top: .7px solid black;
+	padding: 7px;
+  cursor:pointer;
+}
+
+.row a:hover{
+ color: #778899;
+}
+
+.noline{
+	display: flex;
+	flex-wrap:wrap;
+	border-top: 0px;
+	padding: 5px;
+
+}
+
+.ital{
+font-family: Georgia;
+flex:0 0 50%;
+font-style: italic;
+font-size: 16px;
+border-top: 0px;
+
+}
+
+.italbig{
+flex:0 0 50%;
+font-style: italic;
+font-size: 22px;
+border-top: 0px;
+
+}
+
+.title {
+	flex:0 0 50%;
+}
+
+.type {
+	flex:0 0 25%;
+}
+
+.date {
+	flex:0 0 25%;
+}
+
+
+/*START OF IMG*/
+
+
+.image.show {
+  display: flex;
+}
+
+.image{
+  position: fixed;
   height:100vh;
   width:100vw;
-  align-items:center;
+  top:0px;
+  cursor: pointer;
+  display:none;
+  pointer-events: none;
+
   justify-content: center;
-}
-
-.overlay {
-  height:80vh;
-}
-
-.overlay img {
-  height: 100%;
-  width:auto;
-}
-
-.twopage .col {
-  height:100vh;
-  overflow: scroll;
-}
-
-.fourcol .col {
-  height:50vh;
-  display: flex;
-    justify-content: center;
-}
-
-.fourcol .content {
-  height: 100%;
   align-items: center;
-}
-
-.fourcol .col img {
-  height: 100%;
-  width: auto;
-}
-
-.align-bottom {
-  align-items: flex-end;
-}
-
-.justify-right {
-  justify-content: flex-end;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.fours {
-  font-size:14px;
-}
-
-.offset-left {
-  margin-left: 25%;
-}
-
-.images img {
-  width: 100%;
-}
-
-.sources a{
-  display: block;
-}
-
-/*end archive*/
-
-.content-minor {
-  font-size: 15px;
+  cursor: pointer;
+  display:none;
+  pointer-events: none;
 }
 
 
-/*start images*/
-.image-center {
-  margin-left:18%;
-  max-width:500px;
-  max-height:500px;
-}
-/*end images*/
 
+/*links*/
 
+.head{
+font-family: Georgia;
+flex:0 0 50%;
+font-style: italic;
+font-size: 16px;
+border-top: 0px;
+padding:10px 10px 0px;
 
-/*start video background*/
-/*if all else fails, change back to . trailer on both css and index */
-
-.trailer {
-  position:fixed;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  min-width: 100%;
-  min-height: 100%;
-  width:auto;
-  height:auto;
-  top:0px;
-  left:0px;
-  z-index:-1;
 }
 
-  /*end video background */
-
-  .audio {
-    position:fixed;
-    align-items: baseline;
-    bottom: 0px;
-    right:0px;
-  }
-
-/*audio*/
-
-/*video start*/
-
-[data-video] {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-[data-video] * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.body{
+  font-size:16px;
+  font-family:Helvetica;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  font-weight: lighter;
+  text-align:left;
+  width:400px;
+  padding:5px 10px 0px;
 }
 
-/*video end*/
+.body2{
+  font-size:16px;
+  font-family:Helvetica;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  font-weight: lighter;
+  text-align:left;
+  width:700px;
+  padding:5px 10px 0px;
+}
 
-/*contact image*/
-
-.row{
+.bodyimg{
+  border:20px;
+  border-style: none;
+  padding:10px 10px 10px;
   width:100%;
-  display:flex;
-  flex-direction:row;
-  .img{
-    flex: 0 1 300px
-  }
-}
-.justify-content-center{
-  justify-content:center;
-  
+
 }
 
-/*contact image*/
+.bodynav{
+  font-size:16px;
+  font-family:Helvetica;
+  letter-spacing: 0.5px;
+  line-height: 120%;
+  font-weight: lighter;
+  text-align:left;
+  width:400px;
+  padding:5px 10px 0px;
+}
 
-
-
-
-  /*icon*/
-  
-  .icon {
-  top:0px;
-  right:0px;
-  position:fixed;
-  max-width:70px;
-  max-height:70px;
+.bodynav a:hover{
+  color: #778899;
 }
 
 
+
+/**** [popups] needs fixing****/
+
+/*.rollover{
+width: 100vw;
+height:100vh;
+align-items:center;
+justify-content: center;
+position:fixed;
+top:0px;
+left:0px;
+pointer-events: none;
+display: none;
+}
+
+.graphic{
+width:80%;
+height:80%;
+}
+
+.graphic img{
+display: block;
+width:100%;
+height:100%;
+object-fit: contain;
+}
+
+.show{
+	display: flex;
+}*/
