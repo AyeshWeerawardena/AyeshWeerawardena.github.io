@@ -229,34 +229,61 @@ padding:10px 10px 0px;
   color: #778899;
 }
 
-
-
-/**** [popups] needs fixing****/
-
-/*.rollover{
-width: 100vw;
-height:100vh;
-align-items:center;
-justify-content: center;
-position:fixed;
-top:0px;
-left:0px;
-pointer-events: none;
-display: none;
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
-.graphic{
-width:80%;
-height:80%;
-}
 
-.graphic img{
-display: block;
-width:100%;
-height:100%;
-object-fit: contain;
-}
+/*popups test*/
 
-.show{
-	display: flex;
-}*/
+.home-image .img-show {
+        display: none;
+        position: absolute;
+        width: 500px;
+        top: -81px;
+        left: 600px;
+        z-index: 0;
+    }
+.home-image:hover .img-show {
+        display: inline;
+    }
+
+.home-image .img-show2 {
+        display: none;
+        position: absolute;
+        width: 500px;
+        top: -81px;
+        left: 600px;
+        z-index: 0;
+    }
+.home-image:hover .img-show2 {
+        display: inline;
+    }
+
+.home-image .img-show3 {
+        display: none;
+        position: absolute;
+        width: 500px;
+        top: -107px;
+        left: 600px;
+        z-index: 0;
+    }
+.home-image:hover .img-show3 {
+        display: inline;
+    }
+
+.home-image .img-show4 {
+        display: none;
+        position: absolute;
+        width: 500px;
+        top: -107px;
+        left: 600px;
+        z-index: 0;
+    }
+.home-image:hover .img-show4 {
+        display: inline;
+    }
