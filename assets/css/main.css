@@ -35,7 +35,7 @@ text-decoration: none;
 /* Change the color  of links on hover */
 .topnav a:hover {
   color: #778899;
-}
+} 
 
 /* Add a color to the active/current link */
 .topnav a.alpha {
