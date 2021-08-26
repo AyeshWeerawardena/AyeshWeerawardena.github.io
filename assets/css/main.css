@@ -34,7 +34,7 @@ text-decoration: none;
 
 /* Change the color  of links on hover */
 .topnav a:hover {
-  color: #8A2BE2;
+  color: #4b0082;
 } 
 
 /* Add a color to the active/current link */
@@ -74,7 +74,7 @@ text-decoration: none;
 }
 
 .homenav a:hover{
-  color: #8A2BE2;
+  color: #4b0082;
 }
 /*HOME NAV END*/
 
@@ -106,7 +106,7 @@ text-decoration: none;
 }
 
 .row a:hover{
- color: #8A2BE2;
+ color: #4b0082;
 }
 
 .noline{
@@ -171,7 +171,7 @@ border-top: 0px;
 }
 
 .hi{
-  color: #8A2BE2;
+  color: #4b0082;
 }
 
 
@@ -232,7 +232,7 @@ padding:10px 10px 10px 10px;
 }
 
 .bodynav a:hover{
-  color: #8A2BE2;
+  color: #4b0082;
 }
 
 html, body, {
